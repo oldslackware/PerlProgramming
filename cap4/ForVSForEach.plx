@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+my (@array,$ind);
+@array=(1,3,4,6,8,9,12,16,24);
+for $ind(@array){
+print "$ind ";
+}
+print "\n";
+
+@array=(3,6,4,2,8,1,21,10,51);
+foreach $ind(@array){
+print "$ind ";
+}
+print "\n";
+#Sia for che foreach si equivalgono    
+ 

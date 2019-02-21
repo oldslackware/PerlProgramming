@@ -1,0 +1,4 @@
+#!/usr/bin/perl
+use warnings;
+my $inp=<STDIN>;
+print $inp,"\n"; 

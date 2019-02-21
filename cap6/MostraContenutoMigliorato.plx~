@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+die "$0 richiede almeno un argomento\n" if $#ARGV <0;
+print "\n";	
+while(<>){
+	print "$.\t$_";
+	if(eof){
+	print "-" x 30,"\n";
+	close(ARGV);
+}
+}
+print "\nAll done\n";

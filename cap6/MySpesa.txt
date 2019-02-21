@@ -1,0 +1,5 @@
+FINO: 1
+GINO: 2
+KINO: 1
+LINO: 3
+PINO: 2

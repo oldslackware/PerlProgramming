@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use LWP::Simple;
+use strict;
+use warnings;
+
+#print "Here we go!!";
+
+my $url = "http://www.nytimes.com/";
+
+$url =~ m{<H2><a href="http://www.nytimes.com/2009/02/23/world/asia/23terror.html?hp">([\n])([\d+])</a>} || die "Error :(";  #Line 9
+
+my $last = $1;
+
+print "Last: $1";

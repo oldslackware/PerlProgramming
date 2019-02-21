@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+{
+package Ferrari;
+ sub colore{"Rosso";}
+ 
+ sub tipo{
+ my $class=shift;
+ print "Una $class di colore ", $class->colore,"\n";
+}
+}
+Ferrari->tipo;

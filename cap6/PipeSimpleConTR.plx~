@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+print "Inserisci parole da convertire in maiuscolo\n";
+print "CTR-D per terminare\n";
+my @array=<STDIN>;
+open(PIPE,"|tr '[a-z]' '[A-Z]'";
+	print PIPE "@array";
+	close(PIPE);

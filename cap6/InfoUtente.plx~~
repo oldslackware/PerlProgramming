@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+my ($username,$pwline,$logged,$logged_on,$line);
+unless ($#ARGV ==0){
+	die "Usa:$0 <argomenti>:$!";
+}
+open(PASSWD, "/etc/passwd") or die "Non posso aprire: $!";
+$username=shift@ARGV;
+while($pwline=<PASSWD>){
+	if ($pwline =~ / \Q$username:/){
+		print "$username fà parte degli utenti del sistema.\n";
+	}	
+}
+
+
+	close PASSWD;
+	open(LOGGEDON, "who |") or die "Non posso aprire: $!";
+	while($logged=<LOGGEDON>){
+		if($logged =~ / \Q$username/){
+			$logged_on=1;
+			last;
+		}
+	}
+		close LOGGEDON;
+		die "$username non è loggato\n" if ! $logged_on;
+		print "$username è loggato nel sisteme e stà lanciando questi processi.\n";
+		open(PROC, "ps aux |") or die "Non posso aprire $!";
+		while($line=<PROC>){
+			print "$line" if $line =~ /$username/;
+		}
+		close PROC;
+		print '*' x 100;
+		print "\nAll done.\n";

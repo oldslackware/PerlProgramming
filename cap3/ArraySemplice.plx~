@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+my @array1;
+my $l1;
+
+@array1=qw(Parigi Roma Los-Angeles Miami Londra Pechino Sidney);
+$l1=@array1;
+
+print "Il primo array è \n@array1 \ned è di lunghezza $l1\n";
+
+my @array2;
+my $l2;
+
+@array2=qw(Europa Nord-America Africa Australia SudAmerica Australia Asia);
+$l2=@array2;
+print "Il secondo array è \n@array2 \ned è di lunghezza $l2\n";

@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+my $apri=shift @ARGV;
+my @linee;
+open IN,"$apri" or die "Non posso aprire il file:$!\n";
+@linee=<IN>;
+#La riga successiva  mi stampa tutto il contenuto del file.
+#print @linee;
+print"\nIl file $apri contiene ",$#linee+1," linee di testo\n";
+close (IN);

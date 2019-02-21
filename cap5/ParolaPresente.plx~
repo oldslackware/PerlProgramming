@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+print "Inserisci del testo con la parola perl o con la parola kernel\n";
+$_=<STDIN>;
+my $trovato;
+my $prima="perl";
+my $seconda="kernel";
+#split prende la nostra frase e ne tira fuori una lista di parole.
+foreach my $i(split){
+if($i eq $prima || $i eq $seconda){
+$trovato=1;
+#Se troviamo la parola usciamo dal ciclo grazie a last
+last;
+}
+}
+#Se abbiamo trovato un punto
+if($trovato){
+print "Parola trovata.Bravo hai letto  il messaggio\n";
+}
+else{
+print "O non hai letto il messaggio,o sei in fase di testing o sei stupido\n";
+}
+ 

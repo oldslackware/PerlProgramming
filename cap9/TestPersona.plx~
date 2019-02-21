@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+use Persona;
+use warnings;
+use strict;
+#Due metodi per invocare il costruttore
+#primo metodo funzionante ma commentato
+#my $persona1=new Persona("Torvald","Linus","Imprenditore");
+#Secondo metodo
+my $persona1=Persona->new("Bianchi","Lino","Imprenditore");
+my $persona2=Persona->new("Rossi","Mario","Medico");
+my $persona3=Persona->new("Verdi","Carlo","Ingegnere");
+
+$persona1->stampa("Cognome","Nome","Professione");
+$persona2->stampa("Cognome","Professione");
+#$persona3->stampa;
+
+print "I riferimenti dei tre oggetti sono $persona1,$persona2,e $persona3\n";

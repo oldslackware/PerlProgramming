@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+my $file=shift @ARGV;
+my $line;
+open(IN,$file) or die "Non posso aprire il file $!\n";
+seek(IN,0,1);
+while(<IN>){
+print "La parola dopo $parola è:\n";
+$line=<IN>;
+print $line;
+}
+close(IN);

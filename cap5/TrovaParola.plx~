@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+my $occorenze=0;
+my $parola;
+print "Inserisci testo\n";
+$_=<STDIN>;
+chomp();
+print "Inserisci parola da ricercare\n";
+$parola=<STDIN>;
+chomp($parola);
+foreach my $word(split){
+if($word =/$parola/){
+$occorenze++;
+}
+}
+print "Sono state trovate $occorenze occorenze\n";
+exit;

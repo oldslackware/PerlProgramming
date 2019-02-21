@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+my $numero=16;
+#lista con stringa,variabile e carattere newline
+print "Questo elemento è una stringa ed è seguita da una variabile",$numero,"\n"; 

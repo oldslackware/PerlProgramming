@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+sleep(1);
+
+my $fil="";
+print "Inserisci nome del file\n";
+$fil=<STDIN>;
+chomp($fil);
+open FILE,$fil or die $!;
+print "Inserisci parola da cercare all'interno del file:";
+my $parola=<STDIN>; 
+chomp ($parola);
+while(<FILE>){
+foreach my $word(split){
+if ($word =~ /\E\Q$parola/i){
+print "$_";
+}
+}
+}

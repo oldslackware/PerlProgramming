@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use Cwd;
+use POSIX qw[tzset]; 
+#MI setto come time zone London
+$ENV{'TZ'} = 'Europe/London'; 
+tzset(); 
+print scalar localtime();
+$directory=getcwd();                 
+print "\nThe current directory is $directory.\n";
+

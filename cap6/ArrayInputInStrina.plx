@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+print "Inserisci dei valori uno per riga..ctr-d to quit\n";
+my (@array,$string);
+@array=<STDIN>;
+chop(@array);
+$string =join(" ",@array);
+print "Questa è la stringa ottenuto dal vettore\n";
+print("$string\n");

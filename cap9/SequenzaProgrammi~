@@ -1,0 +1,27 @@
+SiPartedaiPackage
+SiParteDaiPackage2
+SiParteDaiPackage3
+SiParteDaiPackage4
+PackageSImple1
+PackageSimple2
+OverWrite
+OverWrite2
+OverWrite3(con uso Eredità)
+OverWrite4(Eredità e uso di SUPER)
+RiferimentiOggettiConBless
+ACiascunoIlSuo
+VariabiliIstanzaUso
+CostruireUnOggetto
+CostruireUnOggettoAdeguatamente
+PassaggioParametriAiMetodi
+SetAndGet
+VariabiliEsterne
+Autoload
+Persona.pm(Modulo)
+TestPersona
+Impiegato.pm
+TestImpiegato
+Uomo.pm
+Donna.pm
+TestPolimorfismoConUomoEDonna
+UsoDellaChiusura
